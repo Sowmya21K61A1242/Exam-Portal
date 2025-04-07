@@ -34,7 +34,7 @@ public class UploadFile extends HttpServlet {
     private void saveContentsToDB(HttpServletRequest request, HttpServletResponse response, String fileName) throws ServletException, IOException {
         File file = new File(this.path);
         if (file.exists()) {
-            try (Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Hemu", "Hello@World40");
+            try (Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Sowmya", "sowmyareddy3154");
                  PreparedStatement createStmt = conn.prepareStatement("CREATE TABLE IF NOT EXISTS `" + sanitizeFileName(fileName) + "` (SNO int PRIMARY KEY, Question varchar(1000) NOT NULL, OptionA varchar(100) NOT NULL, OptionB varchar(100) NOT NULL, OptionC varchar(100) NOT NULL, OptionD varchar(100) NOT NULL, Correct_Option varchar(2) NOT NULL)");
                  PreparedStatement insertStmt = conn.prepareStatement("INSERT INTO `" + sanitizeFileName(fileName) + "` (SNO, Question, OptionA, OptionB, OptionC, OptionD, Correct_Option) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
 
