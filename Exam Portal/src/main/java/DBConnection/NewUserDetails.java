@@ -48,7 +48,7 @@ public class NewUserDetails {
      		e.printStackTrace();
     	}
 	    try {
-	    	conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db","Hemu","Hello@World40");
+	    	conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db","Sowmya","sowmyareddy3154");
 	        stmt = conn.prepareStatement("SELECT * FROM logindetails");
 	        rs = stmt.executeQuery();
 
