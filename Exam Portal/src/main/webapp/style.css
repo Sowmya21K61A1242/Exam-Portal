@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 236, 240);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.PageHeader {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+    color: rgb(249, 6, 31);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#b1 {
+    color: rgb(76, 107, 111);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#b1:hover {
+    background-color: rgb(94, 132, 136);
+    color: white;
+}
+
+.loginbox, .Forgot, .registerbox {
+    width: 350px;
+    background: whitesmoke;
+    color: rgb(249, 6, 31);
+    top: 50%; /* Adjusted from 45% to better center the box */
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 40px; /* Adjusted padding to fit content better */
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold; /* Make heading bold */
+}
+
+.loginbox p, .registerbox p, .Forgot p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input, .registerbox input, .Forgot input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px; /* Adjusted font size */
+}
+
+.loginbox input[type="submit"], .registerbox input[type="submit"], .Forgot input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover, .registerbox input[type="submit"]:hover, .Forgot input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff0707;
+    color: #000;
+}
+
+.loginbox a, .registerbox a, .Forgot a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.loginbox a:hover, .registerbox a:hover, .Forgot a:hover {
+    color: #f50d0d;
+}
