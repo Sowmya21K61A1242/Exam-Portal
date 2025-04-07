@@ -33,7 +33,7 @@ public class ValidUser {
         }
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db?serverTimezone=UTC", "Hemu", "Hello@World40");
+            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db?serverTimezone=UTC", "Sowmya", "sowmyareddy3154");
             stmt = conn.prepareStatement("SELECT * FROM logindetails WHERE username=?");
             stmt.setString(1, this.uname);
             rs = stmt.executeQuery();
