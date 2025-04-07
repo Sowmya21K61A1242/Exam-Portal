@@ -41,7 +41,7 @@ public class PasswordUpdation {
 
         try {
         	System.out.println("Getting Connected");    
-        	conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Hemu", "Hello@World40");
+        	conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Sowmya", "sowmyareddy3154");
         	System.out.println("Connected");  
         	stmt = conn.prepareStatement("SELECT * FROM logindetails WHERE emailid=?;");
             stmt.setString(1, email);
