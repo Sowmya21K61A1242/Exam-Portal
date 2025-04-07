@@ -14,7 +14,7 @@ public class ResultValidation {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Hemu", "Hello@World40");
+            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/quiz_db", "Sowmya", "sowmyareddy3154");
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
 
