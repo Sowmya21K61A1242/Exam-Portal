@@ -1,7 +1,7 @@
 package DBConnection;
 import java.sql.*;
 public class NewUserDetails {
-	String uname, emailid, pass1, pass2;
+	private String uname, emailid, pass1, pass2;
 
 	public String getPass2() {
 		return pass2;
